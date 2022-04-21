@@ -23,8 +23,7 @@ jobs:
         run: |
              ls -lta
       - name: build img
-        run: |
-              cd Nodejs/github-action/
+        run: |              
               sudo docker build -t myapp:1.0.0 . 
       - name: deploy  
         run: |
